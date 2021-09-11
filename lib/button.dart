@@ -37,6 +37,7 @@ class _MySecondButtonsState extends State<MySecondButtons> {
   List<bool> _selections2 = List.generate(3, (index) => false);
 
   late MenuType _dropdownValue;
+  // ignore: unused_field
   late MenuType _selection;
 
   @override
@@ -98,7 +99,7 @@ class _MySecondButtonsState extends State<MySecondButtons> {
                 .toList(),
             onChanged: (newValue) {
               setState(() {
-                _dropdownValue = newValue;
+                // _dropdownValue = newValue;
               });
             },
             elevation: 4,
