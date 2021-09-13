@@ -98,11 +98,14 @@ class _WidgetAppState extends State<WidgetApp> {
               ),
               Padding(
                 padding: const EdgeInsets.all(15),
-                child: DropdownButton(items: _dropDownMenuItems, onChanged: (String? value){
+                child: DropdownButton(
+                  items: _dropDownMenuItems, 
+                  onChanged: (String? value){
                     setState(() {
                       _buttonText = value;
                     });
-                  }, value: _buttonText,
+                  },
+                  value: _buttonText,
                 ),
               ),
             ],
